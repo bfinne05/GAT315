@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionEvent : MonoBehaviour
 {
+	[SerializeField] GameObject ramp;
 	readonly float size = 1;
 
 	private void OnCollisionEnter(Collision collision)
@@ -28,6 +29,7 @@ public class CollisionEvent : MonoBehaviour
 	{
 		Vector3 position = other.transform.position;
 		DrawMarker(position, size, Color.red, 2);
+			ramp.SetActive(true);
 	}
 
 	private void OnTriggerExit(Collider other)

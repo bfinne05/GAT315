@@ -5,7 +5,7 @@ using UnityEngine;
 public class RigidbodyCharacter : MonoBehaviour
 {
 	[SerializeField] float speed = 5;
-	[SerializeField] float turnRate = 180;
+	//[SerializeField] float turnRate = 180;
 	[SerializeField] float jump = 5;
 	[SerializeField] bool isRelative = false;
 
